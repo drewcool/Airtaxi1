@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airtaxi</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="home">
+      <div id="nav">
+        <div id="left-corner">
+          <img src="./wmremove-transformed (1).png" alt="">
+          <a href="">Ride</a>
+          <a href="">About</a>
+        </div>
+       
+        <div id="right-corner">  
+          <button><a href="">Book now</a></button>
+          <a href="./login.html">Login</a>
+        </div>
+      </div>
+
+      
+
+      <div id="page1">
+        <div id="page1-left">
+         <h1> Get a fast and safe flying taxi</h1>
+         <i class='bx bxs-plane-take-off' ></i>
+         <h4>Ride</h4>
+         <form>
+          <input id="pickup" type="text" placeholder="Boarding location">
+          <div id="pickup-suggestions" class="suggestions-box"></div>
+        </form>
+        
+        <form>
+          <input id="drop" type="text" placeholder="Drop location">
+          <div id="drop-suggestions" class="suggestions-box"></div>
+        </form>
+        
+         <button><i class='bx bxs-calendar' ></i> Today</button>
+         <button><i class='bx bxs-time' ></i> Now</button>
+          <div id="page1-bottom">
+            <button class="btn">See Prices</button>
+          <a href="./login.html">Login to see your recent activity</a>
+          </div>
+        
+          
+        </div>
+        <div id="page1-right">
+          <spline-viewer class="background" url="https://prod.spline.design/upK5-r1PtC-JFKJP/scene.splinecode"></spline-viewer>
+          
+          <div id="map" style="height: 350px;"></div>
+          
+        </div>
+      </div>
+      
+    </div>
+    <div id="page2">
+      <div id="video">
+        <video autoplay loop muted src="./Take a ride inside Ehang’s fully autonomous, two-seater air taxi.mp4"></video>
+      </div>
+      <div id="about">
+        <h1>About</h1>
+        <p>Airtaxi is redefining urban transportation with cutting-edge air mobility across Delhi, Noida, and Gurgaon. Born from the frustration of endless traffic and long commutes, our mission is simple — to get you to your destination faster, safer, and in style. By merging innovative technology with a customer-first approach, Airtaxi offers a smarter, more efficient way to travel. Whether it's a business trip, an airport run, or just escaping road congestion, we're here to elevate your journey — literally and figuratively.
+
+        </p>
+      </div>
+      
+    </div>
+    <div id="page3">
+      <h1>Suggestions</h1>
+      <div id="suggest">
+        <div id="box">
+          <h3>Ride</h3>
+          <h5>Noida-Delhi-gurgaon</h5>
+          <a href="">Details</a>
+        </div>
+        <div id="box">
+          <h3>Reserve</h3>
+          <h5>Reserve your ride in advance so you <br> can relax on the day of your trip</h5>
+          <a href="">Details</a>
+        </div>
+        <div id="box">
+          <h3>Rentals</h3>
+          <h5>Request a trip for a block of time</h5>
+          <a href="">Details</a>
+        </div>
+        <div id="box">
+          <h3>Emergency</h3>
+          <h5>You can book for a medical emergency</h5>
+          <a href="">Details</a>
+        </div>
+      </div>
+    </div>
+    <div id="page4">
+      <div id="image">
+        <img src="./img1.png" alt="">
+      </div>
+      <div id="image-about">
+        <h1> On-Demand Air Rides – <br> Travel Above It All</h1>
+        <h4>Skip the traffic and fly directly to your destination with Airtaxi’s on-demand air rides. Whether you're commuting across NCR or heading to a meeting, our service offers fast, safe, and seamless travel in minutes — no roads, no delays, just the sky.</h4>
+        <a href="">Get started</a>
+      </div>
+      
+    </div>
+    <div id="page5">
+      <div id="image-about">
+        <h1>  Eco-Friendly Vision — <br> Powered by Clean Technology</h1>
+        <h4>Airtaxi is committed to a greener future with air rides designed to reduce carbon emissions. By leveraging clean technology and intelligent routing, we minimize environmental impact while maximizing efficiency — making sustainable travel not just possible, but practical.</h4>
+        <a href="">Get started</a>
+      </div>
+      <div id="image">
+        <img src="./img2.png" alt="">
+      </div>
+      
+    </div>
+    <div id="page6">
+      <div id="image">
+        <img src="./img4.jpg" alt="">
+      </div>
+      <div id="image-about">
+        <h1> Easy Navigation —  Real-time tracking, smart pickup & drop suggestions.</h1>
+        <h4>Airtaxi is built to make your journey as smooth as possible. With real-time tracking, you can follow your air ride from takeoff to landing, while our smart pickup and drop suggestions make choosing your locations effortless. Whether you're a first-time user or a frequent flyer, our intuitive navigation system ensures a seamless booking experience every time — no guesswork, no confusion, just smart travel.
+
+        </h4>
+        <a href="">Get started</a>
+      </div>
+      
+    </div>
+
+    <div id="footer">
+      <div id="footer-top">
+        <h5>AirTaxi <br> Help center</h5>
+          <div id="footer-top-left">
+              <h4>Main office 901  sector 142, 201310</h4>
+              <button><a href="">INFO@NCRAIRTAXI.COM</a></button>
+          </div>
+          <div id="footer-top-right">
+              <h4>Second office VasantKunj,Ambience mall,
+                110010
+              </h4>
+              <button><a href="">+9999999</a></button>
+          </div>
+      </div>
+      <div id="footer-vid">
+          <video autoplay loop muted src="./ropes.mp4"></video>
+          <h1>Have <br> an query?</h1>
+          <button><a href="">TELL US</a></button>
+      </div>
+      <div id="footer-bottom">
+          <a href="#">LINKEDIN</a>
+          <a href="#">X/TWITTER</a>
+          <a href="#">INSTAGRAM</a>
+          <a href="#">YOUTUBE</a>
+      </div>
+  </div>
+  </div>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
