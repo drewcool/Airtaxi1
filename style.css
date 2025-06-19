@@ -155,7 +155,7 @@ html,body{
   font-weight: 600;
   margin-left: 3vw;
 }
-input{
+/* input{
   font-size: 1vw;
   border:1px solid #999494a5;
   background-color: #E8E8E8;
@@ -166,7 +166,7 @@ input{
   margin-top: 2vw;
   margin-left: 3vw;
   padding: 1vw;
-}
+} */
 .suggestions-box {
   position: absolute;
   background-color: #fff;
@@ -187,7 +187,36 @@ input{
 .suggestions-box div:hover {
   background-color: #f0f0f0;
 }
+.input-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-left: 3vw;
+  margin-top: 2vw;
+  
+  
+  
+}
 
+
+
+.input-wrapper input {
+  padding-left: 2.5vw; /* make space for icon */
+  font-size: 1vw;
+  border: 1px solid #999494a5;
+  background-color: #E8E8E8;
+  border-radius: 6px;
+  width: 198%;
+  height: 3vw;
+}
+#todayBtn{
+  padding: 1vw 4vw;
+  border-radius: 5px;
+  border: 1px solid #999494a5;
+  margin-left: 3vw;
+  margin-top: 2vw;
+  font-size: 1vw;
+  font-weight: 400;
+}
 
 
 #page1-left>button{
@@ -198,7 +227,35 @@ input{
   margin-top: 2vw;
   font-size: 1vw;
   font-weight: 400;
-  cursor: pointer;
+}
+.calendar-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+#calendarSection {
+  display: none;
+  position: absolute;
+  top: 100%; /* places it below the button */
+  left: 20%;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+#page1-bottom{
+  display: flex;
+}
+ #priceDisplay{
+  font-size: 1.3vw;
+  border-bottom: 1px solid #000;
+  height: inherit;
+  width: 35%;
+  color: #000;
+  margin-top: 1.9vw;
+  margin-left: 2vw;
+  transition: all ease 0.3s;
 }
 
 #page1-left .btn{
