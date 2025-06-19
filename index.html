@@ -10,13 +10,17 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.86/build/spline-viewer.js"></script>
+
 </head>
 <body>
+  
   <div id="main">
     <div id="home">
       <div id="nav">
@@ -39,7 +43,7 @@
          <h1> Get a fast and safe flying taxi</h1>
          <i class='bx bxs-plane-take-off' ></i>
          <h4>Ride</h4>
-         <form>
+         <!-- <form>
           <input id="pickup" type="text" placeholder="Boarding location">
           <div id="pickup-suggestions" class="suggestions-box"></div>
         </form>
@@ -47,13 +51,37 @@
         <form>
           <input id="drop" type="text" placeholder="Drop location">
           <div id="drop-suggestions" class="suggestions-box"></div>
-        </form>
+        </form> -->
+
+        <div class="input-wrapper">
+          <i class='bx bx-map'></i>
+          <input id="pickup" type="text" placeholder="Boarding location">
+          <div id="pickup-suggestions" class="suggestions-box"></div>
+        </div>
         
-         <button><i class='bx bxs-calendar' ></i> Today</button>
-         <button><i class='bx bxs-time' ></i> Now</button>
+        <div class="input-wrapper">
+          <i class='bx bx-map-pin'></i>
+          <input id="drop" type="text" placeholder="Drop location">
+          <div id="drop-suggestions" class="suggestions-box"></div>
+        </div>
+        
+        
+        <div class="calendar-wrapper">
+          <button id="todayBtn"><i class='bx bxs-calendar'></i> Schedule</button>
+          <div id="calendarSection">
+            <input type="date" id="rideDate">
+          </div>
+        </div>
+         <button id="nowBtn"><i class='bx bxs-time'></i> Now</button>
+         <div id="timeSection" style="display: none; margin-top: 10px;">
+          <label for="rideTime">Choose time:</label>
+          <input type="time" id="rideTime">
+        </div>
           <div id="page1-bottom">
-            <button class="btn">See Prices</button>
-          <a href="./login.html">Login to see your recent activity</a>
+            <button id="showPriceBtn" class="btn">See Prices</button>
+           
+          <!-- <a href="./login.html">Login to see your recent activity</a> -->
+          <p id="priceDisplay"></p>
           </div>
         
           
@@ -62,6 +90,7 @@
           <spline-viewer class="background" url="https://prod.spline.design/upK5-r1PtC-JFKJP/scene.splinecode"></spline-viewer>
           
           <div id="map" style="height: 350px;"></div>
+          
           
         </div>
       </div>
@@ -169,11 +198,10 @@
   </div>
   
 
-
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
