@@ -1,81 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f2f5;
+  background: linear-gradient(135deg, #6aca72, #34c2db);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
 .login-container {
   background-color: white;
   padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  width: 400px;
-  text-align: center;
+  border-radius: 15px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-h1 {
-  margin-bottom: 20px;
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
   color: #333;
 }
 
-.input-group {
+.form-group {
   margin-bottom: 20px;
-  text-align: left;
+  position: relative;
 }
 
-label {
+.form-group label {
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 8px;
+  color: #555;
 }
 
-input {
+.form-group input {
   width: 100%;
-  padding: 10px;
+  padding: 10px 15px;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: border-color 0.3s;
-}
-
-input:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-#loginForm a {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  border-radius: 8px;
   font-size: 16px;
-  transition: background-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6aca72;
+}
+
+.form-group .toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #6aca72;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #57b263;
+}
+
+.bottom-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.bottom-text a {
+  color: #34c2db;
   text-decoration: none;
- 
 }
 
-#loginForm a:hover {
-  background-color: #0056b3;
-}
-
-
-
-.options {
-  margin-top: 30px;
-}
-
-.options a {
-  color: #007bff;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.options a:hover {
+.bottom-text a:hover {
   text-decoration: underline;
 }
